@@ -1,6 +1,6 @@
 {
   "name": "@sj1/lang-javascript",
-  "version": "6.2.4",
+  "version": "6.2.10",
   "description": "JavaScript language support for the CodeMirror code editor",
   "scripts": {
     "test": "cm-runtests",
@@ -32,7 +32,7 @@
     "@codemirror/state": "^6.0.0",
     "@codemirror/view": "^6.17.0",
     "@lezer/common": "^1.0.0",
-    "@sj1/lezer-javascript": "1.4.18",
+    "@sj1/lezer-javascript": "1.4.22",
     "ist": "^1.1.7"
   },
   "devDependencies": {

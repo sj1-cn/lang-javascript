@@ -43,8 +43,28 @@ export const snippets: readonly Completion[] = [
     detail: "/ else block",
     type: "keyword"
   }),
-  snip("entity ${name} {\n\tconstructor(${params}) {\n\t\t${}\n\t}\n}", {
+  snip("type ${name} extends ${type};", {
+    label: "type",
+    detail: "definition",
+    type: "keyword"
+  }),
+  snip("dict ${name} {\n\t${}\n}", {
+    label: "dict",
+    detail: "definition",
+    type: "keyword"
+  }),
+  snip("entity ${name} {\n\t${}\n}", {
     label: "entity",
+    detail: "definition",
+    type: "keyword"
+  }),
+  snip("transaction ${name} {\n\t${}\n}", {
+    label: "transaction",
+    detail: "definition",
+    type: "keyword"
+  }),
+  snip("relationship ${name} {\n\t${}\n}", {
+    label: "relationship",
     detail: "definition",
     type: "keyword"
   }),
