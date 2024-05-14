@@ -48,6 +48,11 @@ export const snippets: readonly Completion[] = [
     detail: "definition",
     type: "keyword"
   }),
+  snip("using ${name} from \"${module}\"\n${}", {
+    label: "import",
+    detail: "default",
+    type: "keyword"
+  }),
   snip("import {${names}} from \"${module}\"\n${}", {
     label: "import",
     detail: "named",
@@ -68,13 +73,18 @@ export const typescriptSnippets = snippets.concat([
     detail: "definition",
     type: "keyword"
   }),
-  snip("type ${name} = ${type}", {
+  snip("type ${name} extends ${type}", {
     label: "type",
     detail: "definition",
     type: "keyword"
   }),
-  snip("enum ${name} {\n\t${}\n}", {
-    label: "enum",
+  snip("dict ${name} {\n\t${}\n}", {
+    label: "dict",
+    detail: "definition",
+    type: "keyword"
+  }),
+  snip("entity ${name} {\n\t${}\n}", {
+    label: "entity",
     detail: "definition",
     type: "keyword"
   })

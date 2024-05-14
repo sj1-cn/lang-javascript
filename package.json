@@ -1,6 +1,6 @@
 {
-  "name": "@codemirror/lang-javascript",
-  "version": "6.2.2",
+  "name": "@sj1/lang-javascript",
+  "version": "6.2.3",
   "description": "JavaScript language support for the CodeMirror code editor",
   "scripts": {
     "test": "cm-runtests",
@@ -11,9 +11,9 @@
     "code"
   ],
   "author": {
-    "name": "Marijn Haverbeke",
-    "email": "marijn@haverbeke.berlin",
-    "url": "http://marijnhaverbeke.nl"
+    "name": "wangshilian",
+    "email": "wangshilian@sj1.cn",
+    "url": "https://sj1.cn"
   },
   "type": "module",
   "main": "dist/index.cjs",
@@ -32,7 +32,7 @@
     "@codemirror/state": "^6.0.0",
     "@codemirror/view": "^6.17.0",
     "@lezer/common": "^1.0.0",
-    "@lezer/javascript": "^1.0.0"
+    "@sj1/lezer-javascript": "1.4.16"
   },
   "devDependencies": {
     "@codemirror/buildhelper": "^1.0.0",
@@ -40,6 +40,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/codemirror/lang-javascript.git"
+    "url": "https://github.com/sj1/lang-nsl.git"
   }
 }

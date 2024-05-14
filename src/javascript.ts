@@ -1,4 +1,4 @@
-import {parser} from "@lezer/javascript"
+import {parser} from "@sj1/lezer-javascript"
 import {SyntaxNode} from "@lezer/common"
 import {LRLanguage, LanguageSupport, Sublanguage, sublanguageProp, defineLanguageFacet,
         delimitedIndent, flatIndent, continuedIndent, indentNodeProp,
