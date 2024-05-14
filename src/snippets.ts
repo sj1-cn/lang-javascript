@@ -43,19 +43,14 @@ export const snippets: readonly Completion[] = [
     detail: "/ else block",
     type: "keyword"
   }),
-  snip("class ${name} {\n\tconstructor(${params}) {\n\t\t${}\n\t}\n}", {
-    label: "class",
+  snip("entity ${name} {\n\tconstructor(${params}) {\n\t\t${}\n\t}\n}", {
+    label: "entity",
     detail: "definition",
     type: "keyword"
   }),
   snip("using ${name} from \"${module}\"\n${}", {
-    label: "import",
+    label: "using",
     detail: "default",
-    type: "keyword"
-  }),
-  snip("import {${names}} from \"${module}\"\n${}", {
-    label: "import",
-    detail: "named",
     type: "keyword"
   }),
   snip("import ${name} from \"${module}\"\n${}", {
@@ -64,28 +59,3 @@ export const snippets: readonly Completion[] = [
     type: "keyword"
   })
 ]
-
-/// A collection of snippet completions for TypeScript. Includes the
-/// JavaScript [snippets](#lang-javascript.snippets).
-export const typescriptSnippets = snippets.concat([
-  snip("interface ${name} {\n\t${}\n}", {
-    label: "interface",
-    detail: "definition",
-    type: "keyword"
-  }),
-  snip("type ${name} extends ${type}", {
-    label: "type",
-    detail: "definition",
-    type: "keyword"
-  }),
-  snip("dict ${name} {\n\t${}\n}", {
-    label: "dict",
-    detail: "definition",
-    type: "keyword"
-  }),
-  snip("entity ${name} {\n\t${}\n}", {
-    label: "entity",
-    detail: "definition",
-    type: "keyword"
-  })
-])

@@ -1,6 +1,6 @@
 import ist from "ist"
 import {EditorState} from "@codemirror/state"
-import {javascriptLanguage} from "@codemirror/lang-javascript"
+import {javascriptLanguage} from "@sj1/lang-javascript"
 import {ensureSyntaxTree} from "@codemirror/language"
 import {Tree} from "@lezer/common"
 

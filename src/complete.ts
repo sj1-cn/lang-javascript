@@ -25,7 +25,9 @@ const gatherCompletions: {
   [node: string]: (node: SyntaxNodeRef, def: (node: SyntaxNodeRef, type: string) => void) => void | boolean
 } = {
   FunctionDeclaration: defID("function"),
-  ClassDeclaration: defID("class"),
+  ClassDeclaration: defID("entity"),
+  TransactionDeclaration: defID("transaction"),
+  RelationshipDeclaration: defID("relationship"),
   ClassExpression: () => true,
   EnumDeclaration: defID("constant"),
   TypeAliasDeclaration: defID("type"),
@@ -143,7 +145,7 @@ function enumeratePropertyCompletions(obj: any, top: boolean): readonly Completi
       catch(_) { continue }
       options.push({
         label: name,
-        type: typeof value == "function" ? (/^[A-Z]/.test(name) ? "class" : top ? "function" : "method")
+        type: typeof value == "function" ? (/^[A-Z]/.test(name) ? "entity" : top ? "function" : "method")
           : top ? "variable" : "property",
         boost: -depth
       })

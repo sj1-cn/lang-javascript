@@ -166,7 +166,7 @@ Extend `indentOnInput` expression to cover closing JSX tags.
 
 ### Bug fixes
 
-Improve highlighting tag specificity of defined function and class names. Add indentation information for JSX constructs
+Improve highlighting tag specificity of defined function and entity names. Add indentation information for JSX constructs
 
 Support smart indent for JSX syntax.
 

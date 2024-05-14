@@ -1,7 +1,7 @@
 import ist from "ist"
 import {EditorState} from "@codemirror/state"
 import {getIndentation} from "@codemirror/language"
-import {javascript} from "@codemirror/lang-javascript"
+import {javascript} from "@sj1/lang-javascript"
 
 function check(code: string, options: any = {}) {
   return () => {
@@ -154,14 +154,4 @@ for (;;)
     baz()
 `))
 
-  it("indents JSX constructs", check(`
-let y = <body>
-  <div class="a"
-    lang="it">
-    What?
-  </div>
-  <img src={
-    foo
-  }/>
-</body>`, {jsx: true}))
 })

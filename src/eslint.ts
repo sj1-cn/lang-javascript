@@ -6,7 +6,7 @@ import {javascriptLanguage} from "./javascript"
 /// Connects an [ESLint](https://eslint.org/) linter to CodeMirror's
 /// [lint](#lint) integration. `eslint` should be an instance of the
 /// [`Linter`](https://eslint.org/docs/developer-guide/nodejs-api#linter)
-/// class, and `config` an optional ESLint configuration. The return
+/// entity, and `config` an optional ESLint configuration. The return
 /// value of this function can be passed to [`linter`](#lint.linter)
 /// to create a JavaScript linting extension.
 ///

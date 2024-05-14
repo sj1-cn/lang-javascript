@@ -100,7 +100,7 @@ a directly-named path.</p>
 <dd><p>Connects an <a href="https://eslint.org/">ESLint</a> linter to CodeMirror's
 <a href="https://codemirror.net/docs/ref/#lint">lint</a> integration. <code>eslint</code> should be an instance of the
 <a href="https://eslint.org/docs/developer-guide/nodejs-api#linter"><code>Linter</code></a>
-class, and <code>config</code> an optional ESLint configuration. The return
+entity, and <code>config</code> an optional ESLint configuration. The return
 value of this function can be passed to <a href="https://codemirror.net/docs/ref/#lint.linter"><code>linter</code></a>
 to create a JavaScript linting extension.</p>
 <p>Note that ESLint targets node, and is tricky to run in the
