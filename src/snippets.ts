@@ -43,6 +43,11 @@ export const snippets: readonly Completion[] = [
     detail: "/ else block",
     type: "keyword"
   }),
+  snip("module ${module};{\n\t${}\n}", {
+    label: "module",
+    detail: "default",
+    type: "keyword"
+  }),
   snip("type ${name} extends ${type};", {
     label: "type",
     detail: "definition",
@@ -53,9 +58,19 @@ export const snippets: readonly Completion[] = [
     detail: "definition",
     type: "keyword"
   }),
-  snip("module ${module};\n", {
-    label: "import",
-    detail: "default",
+  snip("entity ${name} extends ${type};", {
+    label: "entity",
+    detail: "definition",
+    type: "keyword"
+  }),
+  snip("transcation ${name} extends ${type};", {
+    label: "transcation",
+    detail: "definition",
+    type: "keyword"
+  }),
+  snip("relationship ${name} <${leftType} - ${rightType}> ${type};", {
+    label: "relationship",
+    detail: "definition",
     type: "keyword"
   })
 ]
