@@ -58,17 +58,17 @@ export const snippets: readonly Completion[] = [
     detail: "definition",
     type: "keyword"
   }),
-  snip("entity ${name} extends ${type};", {
+  snip("entity ${name} {\n\t${}\n};", {
     label: "entity",
     detail: "definition",
     type: "keyword"
   }),
-  snip("transcation ${name} extends ${type};", {
+  snip("transcation ${name} {\n\t${}\n};", {
     label: "transcation",
     detail: "definition",
     type: "keyword"
   }),
-  snip("relationship ${name} <${leftType} - ${rightType}> ${type};", {
+  snip("relationship ${name} <${type} - ${type}> {\n\t${}\n};", {
     label: "relationship",
     detail: "definition",
     type: "keyword"

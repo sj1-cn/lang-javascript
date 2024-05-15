@@ -33,7 +33,7 @@ const gatherCompletions: {
   ClassExpression: () => true,
   FunctionDeclaration: defID("function"),
   VariableDefinition(node, def) { if (!node.matchContext(functionContext)) def(node, "variable") },
-  TypeDefinition(node, def) { def(node, "type") },
+  TypeAliasDefinition(node, def) { def(node, "type") },
   __proto__: null as any
 }
 

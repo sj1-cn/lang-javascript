@@ -1,6 +1,6 @@
 {
   "name": "@sj1/lang-javascript",
-  "version": "6.2.16",
+  "version": "6.2.20",
   "description": "JavaScript language support for the CodeMirror code editor",
   "scripts": {
     "test": "cm-runtests",
