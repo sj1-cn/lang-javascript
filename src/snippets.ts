@@ -53,27 +53,7 @@ export const snippets: readonly Completion[] = [
     detail: "definition",
     type: "keyword"
   }),
-  snip("entity ${name} {\n\t${}\n}", {
-    label: "entity",
-    detail: "definition",
-    type: "keyword"
-  }),
-  snip("transaction ${name} {\n\t${}\n}", {
-    label: "transaction",
-    detail: "definition",
-    type: "keyword"
-  }),
-  snip("relationship ${name} {\n\t${}\n}", {
-    label: "relationship",
-    detail: "definition",
-    type: "keyword"
-  }),
-  snip("using ${name} from \"${module}\"\n${}", {
-    label: "using",
-    detail: "default",
-    type: "keyword"
-  }),
-  snip("import ${name} from \"${module}\"\n${}", {
+  snip("module ${module};\n", {
     label: "import",
     detail: "default",
     type: "keyword"
