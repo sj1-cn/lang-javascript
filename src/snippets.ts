@@ -43,7 +43,7 @@ export const snippets: readonly Completion[] = [
     detail: "/ else block",
     type: "keyword"
   }),
-  snip("module ${module};{\n\t${}\n}", {
+  snip("module ${module} {\n\t${}\n}", {
     label: "module",
     detail: "default",
     type: "keyword"
@@ -68,7 +68,7 @@ export const snippets: readonly Completion[] = [
     detail: "definition",
     type: "keyword"
   }),
-  snip("relationship ${name} <${type} - ${type}> {\n\t${}\n};", {
+  snip("relationship ${name} <${ltype} - ${rtype}> {\n\t${}\n};", {
     label: "relationship",
     detail: "definition",
     type: "keyword"

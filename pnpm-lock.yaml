@@ -27,8 +27,8 @@ importers:
         specifier: ^1.0.0
         version: 1.2.1
       '@sj1/leser-dsl':
-        specifier: 0.1.1
-        version: 0.1.1
+        specifier: 0.1.2
+        version: 0.1.2
       ist:
         specifier: ^1.1.7
         version: 1.1.7
@@ -180,8 +180,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@sj1/leser-dsl@0.1.1':
-    resolution: {integrity: sha512-LbnYt8el7QxS9cJhzp3GT7mwuBjJv04TqaTkVAU5/TY7NwUGMvbZdZDSW8tePMTx9NOlPSmniOKLjpeclPWMag==}
+  '@sj1/leser-dsl@0.1.2':
+    resolution: {integrity: sha512-MAWyABLjcbETELJhmqVzNwqNl+QMPQC1SE2q6Sl0yWQxsnf34kHXBkRUA6IwP55kvf8sYjh6VywZnIHoaptSCw==}
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
@@ -846,7 +846,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.17.2':
     optional: true
 
-  '@sj1/leser-dsl@0.1.1':
+  '@sj1/leser-dsl@0.1.2':
     dependencies:
       '@lezer/common': 1.2.1
       '@lezer/highlight': 1.2.0
